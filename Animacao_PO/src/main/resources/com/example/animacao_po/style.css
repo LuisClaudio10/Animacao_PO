@@ -1,0 +1,42 @@
+/* styles.css */
+.root { -fx-background-color: #f3f5f8; -fx-font-family: "Segoe UI", Arial; }
+
+/* base para nossos botões */
+.button.btn {
+    -fx-text-fill: white;
+    -fx-font-weight: 600;
+    -fx-background-radius: 8, 7;
+    -fx-background-insets: 0, 1;     /* duas camadas */
+    -fx-padding: 12 22;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0.2, 0, 2);
+}
+
+/* BLUE */
+.button.btn.btn-blue {
+    -fx-background-color: #2b5bff;   /* 2 camadas */
+}
+.button.btn.btn-blue:hover {
+    /* apenas hover mais escuro */
+    -fx-background-color: #1f3fcc, #162f99;
+}
+.button.btn.btn-blue:pressed {
+    -fx-background-color: #1b44e6, #1739c6;
+    -fx-translate-y: 1px;
+}
+
+/* RED */
+.button.btn.btn-red {
+    -fx-background-color: #d81b60;
+}
+.button.btn.btn-red:hover {
+    /* apenas hover mais escuro */
+    -fx-background-color: #b0164d, #8a103c;
+}
+.button.btn.btn-red:pressed {
+    -fx-background-color: #b01245, #8e0e38;
+    -fx-translate-y: 1px;
+}
+
+/* tamanho */
+.btn-xl { -fx-font-size: 18px; }
